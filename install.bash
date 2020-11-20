@@ -2,4 +2,4 @@
 
 # Install Packages
 dnf update -y 
-dnf install -y httpd 
+dnf install -y httpd
