@@ -3,7 +3,7 @@ pipeline {
 
     stages {
         stage('Build') {
-            agent { label 'HTTPD' }
+            agent { label 'master' }
             steps {
                 echo 'Building..'
                 echo 'Installing Packages'
