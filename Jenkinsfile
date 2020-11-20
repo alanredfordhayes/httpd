@@ -6,6 +6,7 @@ pipeline {
             agent { label 'master' }
             steps {
                 echo 'Building..'
+                echo 'sh vagrant up'
             }
         }
         stage('Test') {
