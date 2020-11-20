@@ -3,6 +3,7 @@ pipeline {
 
     stages {
         stage('Build') {
+            agent { label 'HTTPD' }
             steps {
                 echo 'Building..'
             }
