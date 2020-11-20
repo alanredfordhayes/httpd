@@ -6,6 +6,8 @@ pipeline {
             agent { label 'HTTPD' }
             steps {
                 echo 'Building..'
+                echo 'Installing Packages'
+                sh 'bash install.bash'
             }
         }
         stage('Test') {
